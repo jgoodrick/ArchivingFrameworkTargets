@@ -4,7 +4,6 @@
 import ComposableArchitecture
 import SwiftUI
 
-@Reducer
 public struct LibraryReducer: Reducer {
     public init(property: String = "Some Property") {
         self.property = property
@@ -12,9 +11,8 @@ public struct LibraryReducer: Reducer {
     
     public var property: String = "Some Property"
     
-    @ObservableState
     public struct State: Equatable {
-        public var stateA: String = "initial field value"
+        @BindingState var stateA: String = "initial field value"
     }
     
     public enum Action: BindableAction {
@@ -32,12 +30,11 @@ public struct LibraryView: View {
         self.store = store
     }
     
-    
-    @BindableStore var store: StoreOf<LibraryReducer>
+    let store: StoreOf<LibraryReducer>
     
     public var body: some View {
-        WithPerceptionTracking {
-            TextField("Property Text Field", text: $store.stateA)
+        WithViewStore(store, observe: { $0 }) { viewStore in
+            TextField("Property Text Field", text: viewStore.$stateA)
         }
     }
 }

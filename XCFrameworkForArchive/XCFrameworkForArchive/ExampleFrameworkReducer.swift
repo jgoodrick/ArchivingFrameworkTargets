@@ -4,10 +4,8 @@ import AnExampleLibrary
 import ComposableArchitecture
 import SwiftUI
 
-@Reducer
 public struct ExampleFrameworkReducer: Reducer {
     
-    @ObservableState
     public struct State {
         public var libraryReducer: LibraryReducer.State
     }
@@ -19,7 +17,7 @@ public struct ExampleFrameworkReducer: Reducer {
     }
     
     public var body: some Reducer<State, Action> {
-        Scope(state: \.libraryReducer, action: \.libraryReducer) {
+        Scope(state: \.libraryReducer, action: /Action.libraryReducer) {
             LibraryReducer()
         }
     }
@@ -29,6 +27,6 @@ public struct ExampleFrameworkView: View {
     let store: StoreOf<ExampleFrameworkReducer>
     
     public var body: some View {
-        LibraryView(store: store.scope(state: \.libraryReducer, action: \.libraryReducer))
+        LibraryView(store: store.scope(state: \.libraryReducer, action: { .libraryReducer($0) }))
     }
 }

@@ -41,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-composable-architecture",
       "state" : {
-        "branch" : "observation-beta",
-        "revision" : "122adf8d49a01f0f166dd2ba23644957aa74a7e8"
+        "branch" : "main",
+        "revision" : "1aa0a951d27eb9b9e219f56456d8d9c7914b6023"
       }
     },
     {
