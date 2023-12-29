@@ -72,7 +72,6 @@ function makeArchives {
         -scheme ${1} \
         -destination "${2}" \
         -archivePath "${3}" \
-        -xcconfig ${PRODUCT_NAME}.xcconfig \
         BUILD_LIBRARY_FOR_DISTRIBUTION=YES \
         SKIP_INSTALL=NO
 }
