@@ -5,6 +5,6 @@
       location = "group:/Users/josephgoodrick/Developer/Exploration/ErrorReproduction/ArchivingXCFrameworksContainer/ArchivingXCFrameworks/AnExampleLibrary">
    </FileRef>
    <FileRef
-      location = "container:XCFrameworkForArchive/XCFrameworkForArchive.xcodeproj">
+      location = "group:../XCFrameworkForArchive/XCFrameworkForArchive.xcodeproj">
    </FileRef>
 </Workspace>
