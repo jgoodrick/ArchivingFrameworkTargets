@@ -18,6 +18,7 @@
 		976824962B3F699A00CBCCA8 /* Project-Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Shared.xcconfig"; sourceTree = "<group>"; };
 		976824972B3F699A00CBCCA8 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
 		976824982B3F6A0A00CBCCA8 /* XCFrameworkForArchive.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = XCFrameworkForArchive.xcconfig; sourceTree = "<group>"; };
+		976824992B3F6DA700CBCCA8 /* make-archive-sim.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "make-archive-sim.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				976824982B3F6A0A00CBCCA8 /* XCFrameworkForArchive.xcconfig */,
+				976824992B3F6DA700CBCCA8 /* make-archive-sim.sh */,
 				9768248C2B3F51F000CBCCA8 /* ExampleFrameworkReducer.swift */,
 			);
 			path = XCFrameworkForArchive;

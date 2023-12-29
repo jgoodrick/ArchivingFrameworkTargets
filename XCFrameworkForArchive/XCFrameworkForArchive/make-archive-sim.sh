@@ -39,13 +39,12 @@ if [ -z "$PRODUCT_NAME" ]; then
 fi
 ORIGINAL_DIR=$(pwd)
 
-
 SANITIZED_FULL_VERSION="1"
 OUTPUT_FILENAME="${PRODUCT_NAME}-${SANITIZED_FULL_VERSION}"
 
 REPO_DIR=$(readlink -f "$ORIGINAL_DIR/../..")
 REL_EXPORT_PATH="${REPO_DIR}/../Artifacts/XCFrameworks/$PRODUCT_NAME/$SANITIZED_FULL_VERSION"
-WORKSPACE_PATH="${REPO_DIR}/ArchivingXCFrameworks.xcworkspace"
+WORKSPACE_PATH="${REPO_DIR}/Workspace/ArchivingXCFrameworks.xcworkspace"
 
 # Remove build directory for this version if it exists from previous run
 echo "Removing build directory for this version if it exists from previous run"
@@ -68,11 +67,12 @@ function makeArchives {
     echo
     echo "▸ Started archiving the scheme: ${1} for destination: ${2} at archive path: ${3}.xcarchive"
     echo
-    xcodebuild clean archive \
+    xcodebuild archive \
         -workspace ${WORKSPACE_PATH} \
         -scheme ${1} \
         -destination "${2}" \
         -archivePath "${3}" \
+        -xcconfig ${PRODUCT_NAME}.xcconfig \
         BUILD_LIBRARY_FOR_DISTRIBUTION=YES \
         SKIP_INSTALL=NO
 }
