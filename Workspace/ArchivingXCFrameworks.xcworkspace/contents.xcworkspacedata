@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../README.md">
+   </FileRef>
+   <FileRef
       location = "group:/Users/josephgoodrick/Developer/Exploration/ErrorReproduction/ArchivingXCFrameworksContainer/ArchivingXCFrameworks/AnExampleLibrary">
    </FileRef>
    <FileRef

@@ -39,5 +39,5 @@ TARGETED_DEVICE_FAMILY                       = 1,2
 // Custom Settings/Overrides:
 
 PRODUCT_BUNDLE_IDENTIFIER = com.josephgoodrick.explorations.XCFrameworkForArchive
-DEVELOPMENT_TEAM = FQPNB63WTA
+DEVELOPMENT_TEAM =
 IPHONEOS_DEPLOYMENT_TARGET = 16.0
