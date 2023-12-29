@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9768248D2B3F51F000CBCCA8 /* NewFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9768248C2B3F51F000CBCCA8 /* NewFile.swift */; };
-		976824902B3F59F000CBCCA8 /* AExampleLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 9768248F2B3F59F000CBCCA8 /* AExampleLibrary */; };
+		9768248D2B3F51F000CBCCA8 /* ExampleFrameworkReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9768248C2B3F51F000CBCCA8 /* ExampleFrameworkReducer.swift */; };
+		976824922B3F631500CBCCA8 /* AnExampleLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 976824912B3F631500CBCCA8 /* AnExampleLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		976824822B3F51AC00CBCCA8 /* XCFrameworkForArchive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCFrameworkForArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9768248C2B3F51F000CBCCA8 /* NewFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFile.swift; sourceTree = "<group>"; };
+		9768248C2B3F51F000CBCCA8 /* ExampleFrameworkReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleFrameworkReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,7 +21,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				976824902B3F59F000CBCCA8 /* AExampleLibrary in Frameworks */,
+				976824922B3F631500CBCCA8 /* AnExampleLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +48,7 @@
 		976824842B3F51AC00CBCCA8 /* XCFrameworkForArchive */ = {
 			isa = PBXGroup;
 			children = (
-				9768248C2B3F51F000CBCCA8 /* NewFile.swift */,
+				9768248C2B3F51F000CBCCA8 /* ExampleFrameworkReducer.swift */,
 			);
 			path = XCFrameworkForArchive;
 			sourceTree = "<group>";
@@ -88,7 +88,7 @@
 			);
 			name = XCFrameworkForArchive;
 			packageProductDependencies = (
-				9768248F2B3F59F000CBCCA8 /* AExampleLibrary */,
+				976824912B3F631500CBCCA8 /* AnExampleLibrary */,
 			);
 			productName = XCFrameworkForArchive;
 			productReference = 976824822B3F51AC00CBCCA8 /* XCFrameworkForArchive.framework */;
@@ -142,7 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9768248D2B3F51F000CBCCA8 /* NewFile.swift in Sources */,
+				9768248D2B3F51F000CBCCA8 /* ExampleFrameworkReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,9 +374,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9768248F2B3F59F000CBCCA8 /* AExampleLibrary */ = {
+		976824912B3F631500CBCCA8 /* AnExampleLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = AExampleLibrary;
+			productName = AnExampleLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

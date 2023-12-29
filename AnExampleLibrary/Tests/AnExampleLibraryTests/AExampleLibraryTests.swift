@@ -1,7 +1,7 @@
 import XCTest
-@testable import AExampleLibrary
+@testable import AnExampleLibrary
 
-final class AExampleLibraryTests: XCTestCase {
+final class AnExampleLibraryTests: XCTestCase {
     func testExample() throws {
         // XCTest Documentation
         // https://developer.apple.com/documentation/xctest

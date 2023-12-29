@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:AExampleLibrary">
+      location = "group:/Users/josephgoodrick/Developer/Exploration/ErrorReproduction/ArchivingXCFrameworksContainer/ArchivingXCFrameworks/AnExampleLibrary">
    </FileRef>
    <FileRef
       location = "container:XCFrameworkForArchive/XCFrameworkForArchive.xcodeproj">
