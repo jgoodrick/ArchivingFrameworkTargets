@@ -15,7 +15,7 @@ let package = Package(
             targets: ["AExampleLibrary"]),
     ],
     dependencies: [
-//      .package(url: "https://github.com/pointfreeco/swift-composable-architecture", branch: "observable-beta"),
+      .package(url: "https://github.com/pointfreeco/swift-composable-architecture", branch: "observation-beta"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -23,7 +23,7 @@ let package = Package(
         .target(
             name: "AExampleLibrary",
             dependencies: [
-//                .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
+                .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
             ]
         ),
         .testTarget(
