@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9768248D2B3F51F000CBCCA8 /* NewFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9768248C2B3F51F000CBCCA8 /* NewFile.swift */; };
+		976824902B3F59F000CBCCA8 /* AExampleLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 9768248F2B3F59F000CBCCA8 /* AExampleLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				976824902B3F59F000CBCCA8 /* AExampleLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -31,6 +33,7 @@
 			children = (
 				976824842B3F51AC00CBCCA8 /* XCFrameworkForArchive */,
 				976824832B3F51AC00CBCCA8 /* Products */,
+				9768248E2B3F59F000CBCCA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,6 +51,13 @@
 				9768248C2B3F51F000CBCCA8 /* NewFile.swift */,
 			);
 			path = XCFrameworkForArchive;
+			sourceTree = "<group>";
+		};
+		9768248E2B3F59F000CBCCA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +87,9 @@
 			dependencies = (
 			);
 			name = XCFrameworkForArchive;
+			packageProductDependencies = (
+				9768248F2B3F59F000CBCCA8 /* AExampleLibrary */,
+			);
 			productName = XCFrameworkForArchive;
 			productReference = 976824822B3F51AC00CBCCA8 /* XCFrameworkForArchive.framework */;
 			productType = "com.apple.product-type.framework";
@@ -359,6 +372,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9768248F2B3F59F000CBCCA8 /* AExampleLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AExampleLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 976824792B3F51AC00CBCCA8 /* Project object */;
 }
