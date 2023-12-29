@@ -67,7 +67,7 @@ function makeArchives {
     echo
     echo "▸ Started archiving the scheme: ${1} for destination: ${2} at archive path: ${3}.xcarchive"
     echo
-    xcodebuild archive \
+    xcodebuild clean archive \
         -workspace ${WORKSPACE_PATH} \
         -scheme ${1} \
         -destination "${2}" \
